@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="tree">
+<head>
+    <link rel="stylesheet" href="css/tree.css"/>
+</head>
+<body>
+<div ng-controller="TreeController as tc">
+    <ul class="tree">
+        <node-tree children="tc.tree" selected-nodes="tc.selectedOptions"></node-tree>
+    </ul>
+<div>{{tc.selectedOptions| json}}</div>
+</div>
+
+<script src="lib/angular.min.js"></script>
+<script src="src/Controllers/TreeController.js"></script>
+<script src="src/Services/TreeService.js"></script>
+<script src="src/Config/URLConfig.js"></script>
+<script src="src/Directives/TreeDirectives.js"></script>
+</body>
+</html>

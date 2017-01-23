@@ -1,0 +1,8 @@
+<li>
+    <span ng-click="toggleVisibility(node)" > {{ ( node.childrenVisibility && node.children.length ) ? '+' : '-' }}</span>
+   
+    <span ng-click="submit({message: node.name})">
+        {{ node.name}}
+    </span>
+</li>
+
